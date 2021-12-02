@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Calcolo la Moltiplicazione</h1>
+<form id="frm1" >
+ Fattore: <input type="text" name="fattore1" value= ><br>
+ Fattore: <input type="text" name="fattore2" value= ><br><br>
+
+</form>
+
+<p>Il prodotto è:</p>
+<button onclick="myFunction()">Moltiplica</button>
+
+<p>Fattore:</p>
+<p id="base"></p>
+<p>Fattore:</p>
+<p id="arrivo"></p>
+<p>Il prodotto è:</p>
+<p id="demo"></p>
+<script>
+function myFunction() {
+
+var x = document.getElementById("frm1");
+
+var base=x.elements[0].value;  
+document.getElementById("base").innerHTML =base;
+
+var arrivo=x.elements[1].value;
+document.getElementById("arrivo").innerHTML =arrivo;
+  
+  document.getElementById("demo").innerHTML =Dislivello(base,arrivo);
+}
+
+function Dislivello(h1,h2){
+return h2*h1;
+}
+
+</script>
+
+</body>
+</html>
